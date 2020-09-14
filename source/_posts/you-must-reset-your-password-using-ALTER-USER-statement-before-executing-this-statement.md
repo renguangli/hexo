@@ -2,7 +2,7 @@
 title: >-
   You must reset your password using ALTER USER statement before executing this statement.
 photos: 'https://renguangli.gitee.io/images/default.png'
-date: 2020-09-14 10:44:22
+date: 2018-11-17 10:44:22
 tags: MySQL
 category: MySQL
 ---
