@@ -2,7 +2,7 @@
 title: DDOS 攻击防范教程
 tags: 网络安全
 category: 网络安全
-photos: 'https://renguangli.gitee.io/images/default.png'
+photos: 'https://renguangli.gitee.io/images/ddos.jpn'
 link_reprint:
   - url: http://www.ruanyifeng.com/blog/2018/06/ddos.html
     title: DDOS 攻击防范教程
