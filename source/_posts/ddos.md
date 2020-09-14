@@ -2,7 +2,7 @@
 title: DDOS 攻击防范教程
 tags: 网络安全
 category: 网络安全
-photos: 'https://renguangli.gitee.io/images/ddos.jpn'
+photos: 'https://renguangli.gitee.io/images/ddos.jpg'
 link_reprint:
   - url: http://www.ruanyifeng.com/blog/2018/06/ddos.html
     title: DDOS 攻击防范教程
@@ -12,8 +12,6 @@ date: 2018-07-12 18:36:56
 一个多月前，阮一峰老师的个人网站遭受 DDOS 攻击，下线了50多个小时。这篇文章就来谈谈，如何应对这种攻击。
 
 <!-- more -->
-
-![image](https://www.wangbase.com/blogimg/asset/201806/bg2018062601.jpg)
 
 ## 一、DDOS 是什么？
 
