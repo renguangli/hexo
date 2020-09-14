@@ -8,9 +8,10 @@ date: 2018-10-14 16:18:42
 
 JSP 全名为Java Server Pages，中文名叫 Java服务器页面，其根本是一个简化的 Servlet 设计，它是由 Sun Microsystems公司倡导，许多公司参与一起建立的一种动态网页技术标准.
 
+<!-- more -->
+
 Spring Boot 默认不支持 JSP，如果你不喜欢 JSP，可以尝试以下 [Thymeleaf](https://guangli.ren/articles/spring-boot-thymeleaf)，它是 Spring Boot 默认支持的模板引擎。如果你习惯使用 JSP，Spring Boot 通过配置也可以支持。
 
-<!-- more -->
 
 ## 快速开始
 

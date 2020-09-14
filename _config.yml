@@ -124,6 +124,9 @@ aomori_widgets:
   - recent_posts  # 最新文章
   - archive #文章归档    
 
+show_count: false
+archive_type: 'yearly' # monthly
+
 aomori_copyright: true # or false
 aomori_baidu_sitepush: true  # or false
 aomori_baidu_analytics: ''
