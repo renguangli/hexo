@@ -1,11 +1,22 @@
 ---
-layout: post
 title: Spring Boot 常用配置以及自定义配置
-category: [Spring Boot]
-tags: [Spring Boot]
+tags: Spring Boot
+category: Java
+photos: 'https://renguangli.gitee.io/images/spring-boot.png'
+date: 2018-10-17 16:18:42
+link_refer:
+  - url: https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/htmlsingle/#boot-features-logging
+    title: boot-features-logging
+  - url: https://www.cnblogs.com/yangtianle/p/9065365.html
+    title: Springboot之自定义配置
+  - url: https://blog.csdn.net/top_code/article/details/78570047?utm_source=blogxgwz0
+    title: Spring Boot Profiles实现多环境下配置切换
 ---
 
+
 Spring Boot 常用配置简单介绍及使用
+
+<!-- more -->
 
 ## 多环境配置
 
@@ -278,18 +289,10 @@ private ConfigProperties configProperties;
 
 我们可以在编译后的文件中看到自动生成的spring-configuration-metadata.json。
 
-![imgaes](https://renguangli.com/images/spring-boot/spring-boot-metadata.jpg)
+![imgaes](https://renguangli.gitee.io/images/spring-boot/spring-boot-metadata.jpg)
 
-![imgaes](https://renguangli.com/images/spring-boot/spring-boot-config.jpg)
+![imgaes](https://renguangli.gitee.io/images/spring-boot/spring-boot-config.jpg)
 
 
-## 参考资料
-
-[boot-features-logging](https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/htmlsingle/#boot-features-logging)
-
-[Springboot之自定义配置](https://www.cnblogs.com/yangtianle/p/9065365.html)
-
-[Spring Boot Profiles实现多环境下配置切换](https://blog.csdn.net/top_code/article/details/78570047?utm_source=blogxgwz0)
-
-示例代码在 [Github](https://renguangli.com/renguangli) 上地址：[spring-boot-config](https://github.com/renguangli/spring-boot-samples/tree/master/spring-boot-config)
+示例代码在 [Github](https://renguangli.gitee.io/renguangli) 上地址：[spring-boot-config](https://github.com/renguangli/spring-boot-samples/tree/master/spring-boot-config)
 

@@ -1,13 +1,16 @@
 ---
-layout: post
 title: Spring Boot 集成 Thymeleaf 模板引擎
-category: [Spring Boot]
-tags: [Spring Boot]
+tags: Spring Boot
+category: Java
+photos: 'https://renguangli.gitee.io/images/spring-boot.png'
+date: 2018-10-14 16:18:42
 ---
 
 Thymeleaf 是适用于 Web 和独立环境的现代服务器端 Java 模板引擎。
 
 Thymeleaf 的主要目标是为开发带来优雅的模板 - Thymeleaf 模板对于浏览器来说这些非HTML标准属性在渲染的时候会被浏览器自动忽略，因此对于前端人员来说它就是一个静态页面；而后端通过 Thymeleaf 引擎渲染的时候这些标签就会被识别，因此对于后端人员来说它又是动态页面！。
+
+<!-- more -->
 
 ## 快速开始
 
@@ -140,7 +143,7 @@ public class ThymeleafController {
 
 ### 效果图
 
-![spring-boot-thymeleaf](https://renguangli.com/images/spring-boot/spring-boot-thymeleaf.jpg)
+![spring-boot-thymeleaf](https://renguangli.gitee.io/images/spring-boot/spring-boot-thymeleaf.jpg)
 
 ## 参考资料
 

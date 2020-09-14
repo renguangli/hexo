@@ -1,11 +1,14 @@
 ---
-layout: post
 title: Spring Boot 集成 Spring Data Jpa 增删改查示例
-category: [Spring Boot]
-tags: [Spring Boot]
+tags: Spring Boot
+category: Java
+photos: 'https://renguangli.gitee.io/images/spring-boot.png'
+date: 2018-10-16 16:18:42
 ---
 
-使用 Spring Data Jpa 对数据库进行操作
+使用 Spring Data Jpa 对数据库进行 CURD 操作
+
+<!-- more -->
 
 ## Jpa 与 Spring Data Jpa 的关系
 
@@ -179,9 +182,8 @@ public class UserController {
 
 ## 效果图
 
-![spring-boot-jpa](https://renguangli.com/images/spring-boot/spring-boot-jpa.png)
+![spring-boot-jpa](https://renguangli.gitee.io/images/spring-boot/spring-boot-jpa.png)
 
-## 参考资料
 
 本文所有代码放在 Github 上，地址：[spring-boot-jpa](https://github.com/renguangli/spring-boot-samples/tree/master/spring-boot-jpa)
 

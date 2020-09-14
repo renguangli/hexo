@@ -1,12 +1,14 @@
 ---
-layout: post
 title: Spring Boot 中使用 @Scheduled 注解创建定时任务
-category: [Spring Boot]
-tags: [Spring Boot]
+tags: Spring Boot
+category: Java
+photos: 'https://renguangli.gitee.io/images/spring-boot.png'
+date: 2018-10-23 16:18:42
 ---
 
 在项目日常开发过程中，经常需要定时任务来帮我们做一些工作，如清理日志。定时任务的实现方法主要有 Timer、Quartz 以及 elastic-job
 
+<!-- more -->
 
 ## Timer 实现定时任务
 
@@ -264,9 +266,6 @@ Year:可出现", - * /"四个字符，有效范围为1970-2099年
 推荐一个 cron 表达式在线生成工具
 
 <http://cron.qqe2.com/>
-
-## 参考资料
-
 
 本文所有代码放在 [Github](https://github.com/renguangli/spring-boot-samples/tree/master/spring-boot-scheduling) 上  
 

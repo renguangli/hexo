@@ -1,13 +1,16 @@
 ---
-layout: post
 title: Spring Boot 集成 JSP 示例
-category: [Spring Boot]
-tags: [Spring Boot]
+tags: Spring Boot
+category: Java
+photos: 'https://renguangli.gitee.io/images/spring-boot.png'
+date: 2018-10-14 16:18:42
 ---
 
 JSP 全名为Java Server Pages，中文名叫 Java服务器页面，其根本是一个简化的 Servlet 设计，它是由 Sun Microsystems公司倡导，许多公司参与一起建立的一种动态网页技术标准.
 
-Spring Boot 默认不支持 JSP，如果你不喜欢 JSP，可以尝试以下 [Thymeleaf](https://renguangli.com/articles/spring-boot-thymeleaf)，它是 Spring Boot 默认支持的模板引擎。如果你习惯使用 JSP，Spring Boot 通过配置也可以支持。
+Spring Boot 默认不支持 JSP，如果你不喜欢 JSP，可以尝试以下 [Thymeleaf](https://guangli.ren/articles/spring-boot-thymeleaf)，它是 Spring Boot 默认支持的模板引擎。如果你习惯使用 JSP，Spring Boot 通过配置也可以支持。
+
+<!-- more -->
 
 ## 快速开始
 
@@ -138,11 +141,11 @@ public class JspController {
 
 index.jsp
 
-![spring-boot-jsp-index](https://renguangli.com/images/spring-boot/spring-boot-jsp-index.jpg)
+![spring-boot-jsp-index](https://renguangli.gitee.io/images/spring-boot/spring-boot-jsp-index.jpg)
 
 user.jsp
 
-![spring-boot-jsp-user](https://renguangli.com/images/spring-boot/spring-boot-jsp-user.jpg)
+![spring-boot-jsp-user](https://renguangli.gitee.io/images/spring-boot/spring-boot-jsp-user.jpg)
 
 
 本文所有代码放在 Github 上，地址：[spring-boot-jsp](https://github.com/renguangli/spring-boot-samples/tree/master/spring-boot-jsp)

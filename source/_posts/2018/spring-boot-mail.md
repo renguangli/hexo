@@ -1,13 +1,16 @@
 ---
-layout: post
 title: Spring Boot 集成 Java-Mail 实现邮件发送服务
-category: [Spring Boot]
-tags: [Spring Boot]
+tags: Spring Boot
+category: Java
+photos: 'https://renguangli.gitee.io/images/spring-boot.png'
+date: 2018-10-19 16:18:42
 ---
 
 发送邮件是我们开发中常用的功能，比如登陆、注册验证码、忘记密码还有邮箱激活等等。
 
-今天我们使用 Spring Boot 的 `spring-boot-mail-starter` 来简化邮件发送。
+现在我们使用 Spring Boot 的 `spring-boot-mail-starter` 来简化邮件发送。
+
+<!-- more -->
 
 ## 快速开始
 
@@ -30,9 +33,9 @@ spring.mail.host=smtp.qq.com
 # SMTP server port.
 spring.mail.port=25
 # Login user of the SMTP server.
-spring.mail.username=211887977@qq.com
+spring.mail.username=e-mail
 # Login password of the SMTP server.
-spring.mail.password=fkvkwmyokpbtcajd
+spring.mail.password=password
 # Default MimeMessage encoding.
 spring.mail.default-encoding=utf-8
 # Additional JavaMail session properties.
@@ -245,7 +248,7 @@ XXX,您好，请点击下面的链接完成注册！
 </head>
 <body>
 <span th:text="${user}">xxx</span>,您好，请点击下面的链接完成注册！<br/>
-<a href="#" th:href="@{https://renguangli.com/{id}(id=${id})}">激活账号</a>
+<a href="#" th:href="@{https://guangli.ren/{id}(id=${id})}">激活账号</a>
 </body>
 </html>
 ```
@@ -278,20 +281,11 @@ public void sendHtmlTemplateMailTest() {
 
 发送邮件
 
-![mail-send](https://renguangli.com/images/spring-boot/spring-boot-mail-send.jpg)
+![mail-send](https://renguangli.gitee.io/images/spring-boot/spring-boot-mail-send.jpg)
 
 邮件日志
 
-![mail-log](https://renguangli.com/images/spring-boot/spring-boot-mail-log.jpg)
-
-## 参考资料
-
-<https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/htmlsingle/#boot-features-email>
-
-<https://blog.csdn.net/Tracycater/article/details/73441010?utm_source=blogxgwz0>
-
-<http://www.ityouknow.com/springboot/2017/05/06/springboot-mail.html>
-
+![mail-log](https://renguangli.gitee.io/images/spring-boot/spring-boot-mail-log.jpg)
 
 
 本文所有代码放在 [Github](https://github.com/renguangli/spring-boot-samples/tree/master/spring-boot-mail) 上  

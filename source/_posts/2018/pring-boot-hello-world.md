@@ -1,11 +1,17 @@
 ---
-layout: post
-title: Spring Boot 快速入门示例
-category: [Spring Boot]
-tags: [Spring Boot]
+title: Spring Boot 快速入门
+tags: Spring Boot
+category: Java
+photos: 'https://renguangli.gitee.io/images/spring-boot.png'
+date: 2018-10-12 16:18:42
+link_refer:
+  - url: https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/htmlsingle/#getting-started-maven-installation
+    title: https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/htmlsingle/#getting-started-maven-installation
 ---
 
 越来越多的公司选择使用 Spring Boot 来开发系统，它到底有什么优点？为什么越来越受欢迎？
+
+<!-- more -->
 
 ## Spring Boot 简介
 
@@ -180,8 +186,4 @@ public class DemoApplicationTests {
 ```
 
 本文所有代码放在 Github 上，地址：[demo](https://github.com/renguangli/spring-boot-samples/tree/master/demo)
-
-## 参考资料
-
-[https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/htmlsingle/](https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/htmlsingle/#getting-started-maven-installation)
 
