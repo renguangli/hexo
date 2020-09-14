@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: GRUANGLI.REN
+title: GUANGLI.REN
 subtitle: ''
 description: ''
 keywords: Java,Spring,Springboot,MySQL,Redis,RocketMQ,Kafka
@@ -13,6 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
+staticUrl: https://renguangli.gitee.io
 url: https://guangli.ren
 root: /
 permalink: :title.html
@@ -96,19 +97,13 @@ include:
 exclude:
 ignore:
 
-auto_excerpt:
-  enable: true
-  length: 150
-
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-aomori
 
 layout: tweet # tweet
-
-aomori_logo: /images/avatar.jpg
-
+aomori_logo: https://renguangli.gitee.io/images/avatar.jpg
 aomori_logo_typed_animated: true
 
 aomori_menu:
@@ -116,20 +111,11 @@ aomori_menu:
   Archives: /archives
   Friends: /friends
 
-link_reprint:
-  -
-    url: url
-    title: title
-  -
-    url: url
-    title: title   
-
 aomori_social:
   -
-    icon: Github
+    icon: github
     type:
     url: https://github.com/renguangli
-
 
 aomori_widgets:
   - toc # 文章导航
@@ -139,17 +125,16 @@ aomori_widgets:
   - archive #文章归档    
 
 aomori_copyright: true # or false
-
 aomori_baidu_sitepush: true  # or false
-
 aomori_baidu_analytics: ''
-
 aomori_google_analytics: 'UA-106555827-1'
 
+# busuanzi tongji
 aomori_busuanzi: true
 
+# disqus comments
 aomori_disqus_shortname: ''
-
+# gitalk comments
 aomori_gitalk:
   enable: true
   clientID: 8ff7ae9648607fe6e4b3
