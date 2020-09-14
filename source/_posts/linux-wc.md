@@ -1,6 +1,6 @@
 ---
 title: Linux 常用命令 wc 使用详解
-photos: https://renguangli.gitee.io/images/linux.png
+photos: https://renguangli.gitee.io/images/linux-wc.png
 date: 2017-10-03 17:22:54
 tags:
 ---
