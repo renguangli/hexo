@@ -1,17 +1,15 @@
 ---
-title: MySQL 在 Linux 和 Windows 下的安装与配置
-photos: 'https://renguangli.gitee.io/images/default.png'
-link_refer:
-  - url: https://www.cnblogs.com/dtting/p/7691202.html
-    title: Windows下MySQL下载安装、配置与使用
-  - url: https://www.cnblogs.com/dengshihuang/p/8029092.html
-    title: Mysql5.7 Linux安装教程
-date: 2018-11-17 10:38:04
+title: Linux 下安装 MySQL 
+photos: 'https://renguangli.gitee.io/images/mysql.png'
+date: 2019-10-01 10:38:04
 tags: MySQL
-category: MySQL
 ---
 
-MySQL 在 Linux 和 Windows 下的安装与配置
+Linux 下安装 MySQL 
+
+下载地址：https://dev.mysql.com/downloads/mysql/
+
+点击直接下载 64 位 5.7.24 版本的 <https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.31-linux-glibc2.12-x86_64.tar.gz>
 
 <!-- more -->
 
@@ -128,94 +126,15 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql> use mysql；
 ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.
 ## 首次登陆需要修改root用户密码
-mysql> alter user 'root'@'localhost' identified by 'root';或者alter user user() identified by 'root';
+mysql> alter user 'root'@'localhost' identified by 'root';
+## 或者
+mysql> alter user user() identified by 'root';
 Query OK, 0 rows affected (0.00 sec)
 
-## 配置root用远程登陆且具有所有库的权限
-mysql> grant all privileges on *.* to 'root'@'%' identified by 'root' with grant option;
-Query OK, 0 rows affected, 1 warning (0.00 sec)
-
 ```
-
-## Windows下 MySQL 解压版安装与配置 
-
-从 MySQL 官网下载解压版本的安装包
-
-下载地址：<https://dev.mysql.com/downloads/file/?id=481160>
-
-点击直接下载：<https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.24-winx64.zip>
-
-下载完成后解压到安装位置，我的安装位置为
-
-```bash
-D:\database\mysql-5.7.24
-```
-
-在 `D:\database\mysql-5.7.24` 目录下新建配置文件 `my.ini`
-
-```bash
-[mysql]
-default-character-set=utf8
-[mysqld]
-port = 3306
-basedir=D:\database\mysql-5.7.24
-datadir=D:\database\mysql-5.7.24\data
-max_connections=200
-character-set-server=utf8
-default-storage-engine=INNODB
-```
-
-5.7.24 版本安装包已不包含 my.default.ini 配置文件和 data 目录。
-
-**data 目录不要新建**，my.ini 配置文件可以新建，data 目录通过初始化命令来创建。
-
-以管理员的方式打开 cmd 命令窗口，进入 D:\database\mysql-5.7.24\bin 目录下执行以下命令，初始化数据库。
-
-```bash
-D:\database\mysql-5.7.24\bin>mysqld --initialize --console
-2018-11-05T09:09:27.549968Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
-2018-11-05T09:09:29.253650Z 0 [Warning] InnoDB: New log files created, LSN=45790
-2018-11-05T09:09:29.850310Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
-2018-11-05T09:09:30.180265Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 80b77eb4-e0da-11e8-ac91-5215d904abe2.
-2018-11-05T09:09:30.225972Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
-2018-11-05T09:09:30.244958Z 1 [Note] A temporary password is generated for root@localhost: T%loP7wOUdOz
-
-```
-
-`mysqld --initialize` 会随机生成临时密码 `T%loP7wOUdOz`。
-
-配置 MySQL 为Windows 服务
-```bash
-mysqld install 
-```
-
-管理员的身份运行 CMD，启动 MySQL
-```bash
-net start|stop mysql
-```
-
-```bash
-[root@localhost mysql]# mysql -u root -pT%loP7wOUdOz
-mysql: [Warning] Using a password on the command line interface can be insecure.
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 3
-Server version: 5.7.24
-
-Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> use mysql;
-ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.
-## 首次登陆需要修改root用户密码
-mysql> alter user 'root'@'localhost' identified by 'root';或者alter user user() identified by 'root';
-Query OK, 0 rows affected (0.00 sec)
 
 ## 配置root用远程登陆且具有所有库的权限
+``` bash
 mysql> grant all privileges on *.* to 'root'@'%' identified by 'root' with grant option;
 Query OK, 0 rows affected, 1 warning (0.00 sec)
 ```

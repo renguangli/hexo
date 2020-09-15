@@ -1,8 +1,8 @@
 ---
-title: Linux 编辑器 vi 使用详解
+title: vi 编辑器使用详解
 photos: https://renguangli.gitee.io/images/linux.png
-date: 2017-10-13 12:12:51
-tags:
+date: 2018-08-08 12:12:51
+tags: Linux
 ---
 
 vi 编辑器是 Linux 系统下标准的编辑器.而且不逊色于其他任何最新的编辑器。
