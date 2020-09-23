@@ -9,20 +9,20 @@ Linux 下安装 MySQL
 
 下载地址：https://dev.mysql.com/downloads/mysql/
 
-点击直接下载 64 位 5.7.24 版本的 <https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.31-linux-glibc2.12-x86_64.tar.gz>
+点击直接下载 64 位 5.7.24 版本的安装包 [mysql-5.7.31-linux-glibc2.12-x86_64.tar.gz](https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.31-linux-glibc2.12-x86_64.tar.gz)
 
 <!-- more -->
 
 ## Linux下 MySQL 二进制安装
 
-1、创建用户、用户组
+### 1、创建用户、用户组
 
 ```bash
 [root@localhost local]# groupadd mysql
 [root@localhost local]# useradd -g mysql -s /sbin/nologin mysql
 ```
 
-2、将二进制包解压到指定目录并重命名为mysql
+### 2、将二进制包解压到指定目录并重命名为 mysql
 
 ```bash
 [root@localhost local]# pwd
@@ -45,7 +45,7 @@ drwxr-xr-x. 5 root root        49 11月  4 08:42 share
 drwxr-xr-x. 2 root root         6 11月  8 05:33 src
 ```
 
-3、配置环境变量
+### 3、配置环境变量
 
 ```bash
 [root@localhost local]# cd mysql/bin/
@@ -55,30 +55,34 @@ drwxr-xr-x. 2 root root         6 11月  8 05:33 src
 [root@localhost bin]# source /etc/profile
 ```
 
-4、创建数据目录并赋权
+### 4、创建数据目录并赋权
 
 ```bash
 [root@localhost mysql]# pwd
 /usr/local/mysql
 [root@localhost mysql]# mkdir data
+[root@localhost mysql]# chown -R mysql.mysql data
 ```
 
-5、编辑配置文件
-
+### 5、编辑配置文件
+        
 ```bash
 [root@localhost mysql]# vi /etc/my.cnf
-[client]
-port=3306
-default-character-set=utf8
-socket=/usr/local/mysql/run/mysql.sock
 [mysqld]
-pid_file=/usr/local/mysql/run/mysql.pid
+port=3306
+basedir=/usr/local/mysql
 datadir=/usr/local/mysql/data
+socket=/var/lib/mysql/mysql.sock
 max_connections=200
 character-set-server=utf8
-
+[mysqld_safe]
+log-error=/var/log/mysql/mysqld.err
+pid-file=/var/run/mysql/mysql.pid
+[client]
+socket=/var/lib/mysql/mysql.sock
 ```
-6、初始化 MySQL
+
+### 6、初始化 MySQL
 
 ```bash
 [root@localhost mysql]# mysqld --initialize --user=mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data
@@ -90,20 +94,9 @@ character-set-server=utf8
 2018-11-07T21:50:51.497829Z 1 [Note] A temporary password is generated for root@localhost: QHSpB01maf.!
 ```
 
-记住最后一行生成临时root密码: QHSpB01maf.!
+记住最后一行生成临时 root 密码 : QHSpB01maf.!
 
-7、编辑配置文件
-        
-```bash
-[root@localhost data]# vi /etc/my.cnf
-[mysqld]
-port=3306
-datadir=/usr/local/mysql/data
-max_connections=200
-character-set-server=utf8
-```
-
-8、启动
+### 7、启动
 
 ```bash
 [root@localhost mysql]# cp support-files/mysql.server /etc/init.d/mysql
@@ -133,7 +126,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 ```
 
-## 配置root用远程登陆且具有所有库的权限
+## 程连接配置
 ``` bash
 mysql> grant all privileges on *.* to 'root'@'%' identified by 'root' with grant option;
 Query OK, 0 rows affected, 1 warning (0.00 sec)

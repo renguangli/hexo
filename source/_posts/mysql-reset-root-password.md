@@ -1,7 +1,6 @@
 ---
 title: MySQL 重置 root 用户密码
 tags: MySQL
-photos: 'https://renguangli.gitee.io/images/mysql.png'
 date: 2019-10-08 16:18:42
 ---
 
