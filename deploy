@@ -4,4 +4,4 @@ hexo g
 hexo d
 hexo clean
 export HEXO_ALGOLIA_INDEXING_KEY=639f9dd3493779b12b00e324b63629a1
-hexo algolia
+hexo algolia --flush true

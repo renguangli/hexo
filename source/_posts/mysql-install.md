@@ -1,28 +1,26 @@
 ---
 title: Linux 下安装 MySQL 
 photos: 'https://renguangli.gitee.io/images/mysql.png'
-date: 2019-10-01 10:38:04
+date: 2020-03-11 10:38:04
 tags: MySQL
 ---
 
-Linux 下安装 MySQL 
-
+Linux 下安装 MySQL
 下载地址：https://dev.mysql.com/downloads/mysql/
-
 点击直接下载 64 位 5.7.24 版本的安装包 [mysql-5.7.31-linux-glibc2.12-x86_64.tar.gz](https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.31-linux-glibc2.12-x86_64.tar.gz)
 
 <!-- more -->
 
-## Linux下 MySQL 二进制安装
+# Linux下 MySQL 二进制安装
 
-### 1、创建用户、用户组
+## 1、创建用户、用户组
 
 ```bash
 [root@localhost local]# groupadd mysql
 [root@localhost local]# useradd -g mysql -s /sbin/nologin mysql
 ```
 
-### 2、将二进制包解压到指定目录并重命名为 mysql
+## 2、将二进制包解压到指定目录并重命名为 mysql
 
 ```bash
 [root@localhost local]# pwd
@@ -45,7 +43,7 @@ drwxr-xr-x. 5 root root        49 11月  4 08:42 share
 drwxr-xr-x. 2 root root         6 11月  8 05:33 src
 ```
 
-### 3、配置环境变量
+## 3、配置环境变量
 
 ```bash
 [root@localhost local]# cd mysql/bin/
@@ -55,7 +53,7 @@ drwxr-xr-x. 2 root root         6 11月  8 05:33 src
 [root@localhost bin]# source /etc/profile
 ```
 
-### 4、创建数据目录并赋权
+## 4、创建数据目录并赋权
 
 ```bash
 [root@localhost mysql]# pwd
@@ -64,7 +62,7 @@ drwxr-xr-x. 2 root root         6 11月  8 05:33 src
 [root@localhost mysql]# chown -R mysql.mysql data
 ```
 
-### 5、编辑配置文件
+## 5、编辑配置文件
         
 ```bash
 [root@localhost mysql]# vi /etc/my.cnf
@@ -82,7 +80,7 @@ pid-file=/var/run/mysql/mysql.pid
 socket=/var/lib/mysql/mysql.sock
 ```
 
-### 6、初始化 MySQL
+## 6、初始化 MySQL
 
 ```bash
 [root@localhost mysql]# mysqld --initialize --user=mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data
@@ -96,7 +94,7 @@ socket=/var/lib/mysql/mysql.sock
 
 记住最后一行生成临时 root 密码 : QHSpB01maf.!
 
-### 7、启动
+## 7、启动
 
 ```bash
 [root@localhost mysql]# cp support-files/mysql.server /etc/init.d/mysql
@@ -126,7 +124,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 ```
 
-## 程连接配置
+# 远程连接配置
 ``` bash
 mysql> grant all privileges on *.* to 'root'@'%' identified by 'root' with grant option;
 Query OK, 0 rows affected, 1 warning (0.00 sec)

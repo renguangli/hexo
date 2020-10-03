@@ -160,9 +160,9 @@ algolia:
 deploy:
   -
     type: git
-    repo: git@github.com:renguangli/renguangli.github.io.git
+    repo: git@e.coding.net:renguangli/renguangli.coding.me.git
     branch: master
   -
     type: git
-    repo: git@e.coding.net:renguangli/renguangli.coding.me.git
+    repo: git@github.com:renguangli/renguangli.github.io.git
     branch: master
