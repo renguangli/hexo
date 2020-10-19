@@ -1,6 +1,6 @@
 ---
 title: vi 编辑器使用详解
-photos: 'https://renguangli.gitee.io/images/linux.png'
+photos: '/images/linux.png'
 date: 2019-01-20 12:12:51
 tags: Linux
 ---
