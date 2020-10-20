@@ -1,6 +1,6 @@
 ---
 title: Flink 学习笔记 - Flink 简单介绍
-tags: Flink
+categories: Flink
 photos: 'https://flink.apache.org/img/flink-header-logo.svg'
 date: 2020-09-23 22:25:55
 ---

@@ -1,6 +1,6 @@
 ---
 title: CentOS7 搭建本地 yum 源
-tags: Linux
+categories: Linux
 date: 2020-10-08 20:38:05
 ---
 

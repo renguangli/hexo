@@ -1,6 +1,6 @@
 ---
 title: 什么是集群？负载均衡又是什么？
-tags: 架构
+categories: 架构
 sticky: top
 link_reprint:
   - url: https://www.cnblogs.com/nullering/p/9311151.html

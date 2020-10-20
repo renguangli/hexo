@@ -2,7 +2,7 @@
 title: Linux 下安装 MySQL 
 photos: 'https://renguangli.gitee.io/images/mysql.png'
 date: 2020-03-11 10:38:04
-tags: MySQL
+categories: MySQL
 ---
 
 Linux 下安装 MySQL

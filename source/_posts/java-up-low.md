@@ -1,6 +1,6 @@
 ---
 title: Java 判断字母大小写并互相转换
-tags: Java
+categories: Java
 photos: 'https://renguangli.gitee.io/images/default.png'
 date: 2018-10-07 11:52:04
 ---

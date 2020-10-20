@@ -1,6 +1,6 @@
 ---
 title: Flink 学习笔记 - API 介绍
-tags: Flink
+categories: Flink
 photos: 'https://flink.apache.org/img/flink-header-logo.svg'
 date: 2020-10-01 09:25:55
 ---

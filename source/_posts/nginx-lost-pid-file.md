@@ -1,6 +1,6 @@
 ---
 title: 'nginx: [error] open() "/run/nginx.pid" failed (2: No such file or directory)'
-tags: Nginx
+categories: Nginx
 date: 2018-05-31 10:52:04
 ---
 

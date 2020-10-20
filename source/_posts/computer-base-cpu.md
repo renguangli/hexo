@@ -1,6 +1,6 @@
 ---
 title: 计算机基础 - CPU
-tags: 计算机基础
+categories: 计算机基础
 link_refer:
   - url: https://tech.hqew.com/news_2058653
     title: https://tech.hqew.com/news_2058653

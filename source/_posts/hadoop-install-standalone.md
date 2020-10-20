@@ -1,6 +1,6 @@
 ---
 title: hadoop 单机版安装
-tags: [软件安装,hadoop]
+categories: [软件安装,hadoop]
 link_refer:
   - url: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
     title: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html

@@ -1,6 +1,6 @@
 ---
 title: 计算机基础 - 基本架构
-tags: 计算机基础
+categories: 计算机基础
 link_reprint:
   - url: https://zhuanlan.zhihu.com/p/63322067
     title: 电脑硬件入门——基础之计算机架构

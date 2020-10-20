@@ -1,6 +1,6 @@
 ---
 title: 什么是熔断？什么是服务降级？
-tags: Java
+categories: Java
 link_refer:
   - url: https://blog.csdn.net/pengjunlee/article/details/86688858
     title: 服务熔断与降级（Hystrix）
