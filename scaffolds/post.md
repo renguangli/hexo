@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags: Java
+categories: Java
 photos: https://renguangli.gitee.io/images/default.png
 link_reprint:
   -
